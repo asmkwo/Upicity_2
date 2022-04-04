@@ -31,7 +31,16 @@ def index():
         points = Point.query.order_by(Point.date_created).all()
         return render_template('index.html', points=points)
 
-@app.route
+@app.route('/delete/<int:id>')
+def delete(id):
+    point_to_delete = Point.query.get_or_404(id)
+
+    try:
+        db.session.delete(point_to_delete)
+        db.session.commit()
+        return redirect('/')
+    except:
+        return 'There was a problem deleting your point'
 
 
 
