@@ -15,23 +15,26 @@
     ></script>
 
     <div class="'content" id="tab">
-      <h1>Points saved</h1>
+      <h1 style="text-align : center">Points saved</h1>
 
       <table border="1">
         <tr>
-          <th>- Point -</th>
           <th>- Coordonates -</th>
-          <th>- Added -</th>
+          <th>- Time -</th>
+          <th>- Options -</th>
         </tr>
+        {% for point in points%}
         <tr>
-          <td></td>
-          <td></td>
+          <td>{{point.content}}</td>
+          <td>{{point.date_created.time()}}</td>
+
           <td>
             <a href="">Delete</a>
             <br>
             <a href="">Update</a>
           </td>
         </tr>
+        {% endfor %}
       </table>
 
       <form action="/" method="POST">
