@@ -4,20 +4,42 @@
     <title>Simple Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <script type="text/javascript" src="{{url_for('static', filename='js/index.js')}}">   </script>
 
   </head>
   <body>
-    <!--script src="/static/js/index.js"></script-->
     <div id="map"></div>
-
-    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <script type="text/javascript" src="{{url_for('static', filename='js/index.js')}}">
-    </script>
-
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7Fh2ZuEBi7rp2gILfVQlfRDpRrqL1Tdg&callback=initMap"
       async
     ></script>
-  <d1>Hello World2</d1>
+
+    <div class="'content" id="tab">
+      <h1>Points saved</h1>
+
+      <table border="1">
+        <tr>
+          <th>- Point -</th>
+          <th>- Coordonates -</th>
+          <th>- Added -</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <a href="">Delete</a>
+            <br>
+            <a href="">Update</a>
+          </td>
+        </tr>
+      </table>
+
+      <form action="/" method="POST">
+          <input type="text" name="content" id="content">
+        <input type="submit" value="Add point">
+      </form>
+
+
+    </div>
   </body>
 </html>
