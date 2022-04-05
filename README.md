@@ -9,7 +9,9 @@ This choice has been motivated by the fact that Google offers far more key libra
 Pull the github repository into a local directory, and open a Terminal.. 
 
 >> pip install requirements.txt
+
 >>python3 app.py
+
 These previous steps should work. Notice that this repository is a python virtual environment, take that into account if you run in any type of issue. 
 
 Open a web browser and copy/paste one of the followings : 
