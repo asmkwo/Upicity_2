@@ -33,8 +33,12 @@ Your set of points is now saved !
 The coordinates of the points are stored locally on a database file called 'test.db', which is a SQLAlchemy database.
 To interact with it  : 
 - Open terminal in directory 
+- 
 >> python3 
+
 A python shell just oppened : 
+
 >> from app import db 
+
 Your database is now imported in your python shell, you can perform any kind of commands on it. See SQLAlchemy documentation for more :
 https://docs.sqlalchemy.org/en/14/core/tutorial.html
