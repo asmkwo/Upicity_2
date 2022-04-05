@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Map</title>
+    <title id="test_address">Map</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
     <script type="text/javascript" src="{{url_for('static', filename='js/index.js')}}">   </script>
+
+    <div id="search">
+      <form id="search_form">
+          <input type="text"  id="address" placeholder="Type an address or a location" >
+          <input type="submit" value="Search" >
+      </form>
+
+    </div>
+
 
   </head>
   <body>
@@ -35,9 +46,9 @@
         {% endfor %}
       </table>
 
-      <form action="/" method="POST">
-          <input type="text" name="content" id="content" style="width :70%">
-        <input type="submit" value="Add point">
+      <form method="POST" id="add_points">
+          <input type="text" name="content" id="content" style="width :80%" placeholder="Copy and paste 2 point coordinates and click on 'Add Points'" >
+        <input type="submit" value="Add points" >
       </form>
 
 

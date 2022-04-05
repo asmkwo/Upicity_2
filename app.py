@@ -14,7 +14,6 @@ class Point(db.Model):
 
     def __repr__(self):
         return '<Point %r>' % self.id
-db.create_all()
 
 @app.route('/',methods=['POST','GET'])
 def index():
