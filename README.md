@@ -1,11 +1,11 @@
 # Upicity_2
-## SELECT & STORE POINTS ON GOOGLE MAP ##
+# SELECT & STORE POINTS ON GOOGLE MAP #
 
 -- This code contains a Python Flask App that opens a webpage, displaying a Map from GoogleMaps JavaScript API. --
 
 This choice has been motivated by the fact that Google offers far more key libraries and methods for web applications. 
 
-# HOW TO USE THE APP # 
+## HOW TO USE THE APP ## 
 Pull the github repository into a local directory, and open a Terminal.. 
 
 >> pip install requirements.txt
@@ -26,7 +26,7 @@ Now here are some hints on how the app should be used : (follow this link for vi
 
 Your set of points is now saved ! 
 
-# DATA LOCATION #
+## DATA LOCATION ##
 
 The coordinates of the points are stored locally on a database file called 'test.db', which is a SQLAlchemy database.
 To interact with it  : 
